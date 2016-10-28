@@ -1,0 +1,122 @@
+---
+---
+
+// Custom styles
+@import "helpers";
+
+.mcar-hero {
+  margin-bottom: 0;
+  height: 500px;
+  a, h1, h2, h3, h4, small, th, td {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+  }
+  a:hover {
+    color: $mcar-dark-blue;
+  }
+  form, button, .btn {
+    color: #fff;
+  }
+}
+
+// These are identified in the hero-bg variable on the front matter
+#front-hero {
+  background: url("/assets/bixby_bridge_blue_filter.jpg");
+  background-size: cover;
+}
+
+#page-hero {
+  background: url("/assets/MontereyBayCalifornia_blue_filter.jpg");
+  background-size: cover;
+}
+
+#nav-logo {
+  max-width: 200px;
+}
+
+#hero-header {
+  margin-bottom: 30px;
+}
+
+.mcar-module {
+  background: rgba(0, 0, 0, 0.4);
+  //min-height: 300px;
+  padding: 15px;
+  h3 {
+    text-align: center;
+  }
+  input {
+    width: 75%;
+  }
+}
+
+.mcar-module-front {
+  background: rgba(0, 0, 0, 0.4);
+  //min-height: 300px;
+  padding: 15px;
+  h3 {
+    text-align: center;
+  }
+  .form-inline input {
+    width: 75%;
+  }
+}
+
+#above-content {
+  margin-top: -20px; // remove main-nav bottom margin
+  h1, h2, h3 {
+    text-align: center;
+  }
+  .jumbotron {
+    background-color: transparent;
+  }
+  .list-group-item {
+    background-color: transparent;
+    font-weight: 300;
+    &:hover {
+      background-color: $mcar-dark-blue;
+    }
+  }
+  // Remove border radius in bootstrap list
+  .list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .list-group-item:last-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  background-color: $mcar-green; //lighten( $mcar-med-blue, 15% );
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+#front-banner-bottom {
+  background: url("/assets/ZPublicBanner_MCAR.jpg"); // url("/assets/Taste2016WebsiteBanner.jpg");
+  background-size: contain;
+  margin-bottom: 0px;
+}
+
+#below-content {
+  background-color: #ddd;
+}
+
+.footer {
+  padding: 40px 20px;
+  background-color: $mcar-dark-blue; // prev #444
+  color: #fff !important;
+  #sample-foot-menu, #copyright, small {
+    text-align: center;
+    font-weight: 300;
+  }
+}
+
+/* This is only necessary for a fixed-top navbar in Bootstrap
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+*/

@@ -1,0 +1,11 @@
+{% if page.banner-bottom %}
+<div class="jumbotron mcar-banner" id="{{ page.banner-bottom }}">
+  <div class="container">
+    {% if page.banner-bottom-copy %}
+    <div id="banner-bottom-copy">
+      {{ page.banner-bottom-copy }}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}

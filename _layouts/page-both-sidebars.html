@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      {% if page.sidebar-left %}
+        {% include {{ page.sidebar-left }} %}
+      {% endif %}
+    </div>
+    <div class="col-md-6">
+      {{ content }}
+    </div>
+    <div class="col-md-3">
+      {% if page.sidebar-right %}
+        {% include {{ page.sidebar-right }} %}
+      {% endif %}
+    </div>
+  </div>
+</div>

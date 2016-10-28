@@ -1,0 +1,39 @@
+// Helper Sass styles
+
+// Get Open Sans font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+$open-sans: 'Open Sans', sans-serif;
+
+// Color scheme for MCAR
+$mcar-dark-blue: #2F4EA0;
+$mcar-med-blue: #3270B4;
+$mcar-green: #50AFB6;
+$mcar-yellow: #FFD861;
+
+// Style resets
+html {
+  font-family: $open-sans;
+  font-weight: 400;
+}
+
+body {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
+.btn, button {
+  border-radius: 0px;
+  font-weight: 300;
+}
+
+.btn-info {
+  background-color: $mcar-med-blue;
+  border-color: $mcar-med-blue;
+}
+
+.thumbnail {
+  border: 0;
+}

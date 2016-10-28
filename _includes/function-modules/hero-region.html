@@ -1,0 +1,17 @@
+<div class="jumbotron mcar-hero" id="{{ page.hero-bg }}">
+  <div class="container">
+
+    {% if page.hero-header %}
+    <div id="hero-header">
+      {% include {{ page.hero-header }} %}
+    </div>
+    {% endif %}
+
+    {% if page.hero-module %}
+    <div id="hero-module">
+      {% include {{ page.hero-module }} %}
+    </div>
+    {% endif %}
+    
+  </div>
+</div>
